@@ -1,0 +1,52 @@
+@layer lvl1 lvl2;
+
+@layer lvl1{
+    body{
+        margin:0;
+        padding:0;
+        
+    }
+    
+    
+    *{
+        margin:inherit;
+        padding:inherit;
+        border: 10px solid black;
+    }
+    
+    #groove{
+        border-style: groove;
+    }
+    
+    #ridge{
+        border-style: ridge;
+    }
+    
+    #inset{
+        border-style:inset;
+    }
+    
+    #outset{
+        border-style:outset;
+    }
+
+
+}
+
+
+
+@layer lvl2{
+    h1{
+        max-width: 150px;
+        margin:10px;
+    }
+
+    body{
+        border-style: none;
+    }
+
+
+    html{
+        border-style: none;
+    }
+}
