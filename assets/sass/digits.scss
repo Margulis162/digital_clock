@@ -5,11 +5,11 @@
     background-color:colors.$background;
     block-size: 150px;
     inline-size: 93px;
-    display: inline-block;
-    
-    margin-inline: 10px;
-    box-sizing:border-box;
     box-shadow:  10px 10px 20px  colors.$shadow  ;  
+    display: inline-block;
+    box-sizing:border-box;
+    margin-inline: 10px;
+    
 }
 
 
@@ -115,6 +115,32 @@ box-sizing:border-box;
 margin: 0;
 box-shadow:  inset 10px 10px 20px  colors.$shadow  ;  
 }
+
+/* size ajustments for seconds top and bottom */
+
+.proto-top-sec{
+    border: 8px solid colors.$digit_on;
+    border-block-end: 5px solid colors.$digit_on;
+    inline-size:45px;
+    block-size: 28px;
+    box-sizing:border-box;
+    margin: 0;
+    margin-inline:10px;
+    box-shadow:  inset 10px 10px 20px  colors.$shadow  ;  
+           }
+   
+   
+   /* bottom part of a  digit of seconds */
+   .proto-bottom-sec{
+   border: 8px solid colors.$digit_on;
+   border-block-start: 5px solid colors.$digit_on;
+   inline-size:45px;
+   block-size: 46px;
+   box-sizing:border-box;
+   margin: 0;
+   margin-inline:10px;
+   box-shadow:  inset 10px 10px 20px  colors.$shadow  ;  
+   }
 
 
 /* nine*/

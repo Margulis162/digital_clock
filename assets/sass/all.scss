@@ -8,14 +8,16 @@ body{
     min-height: 100vh;
     padding-top:1px;
     overflow: hidden;
+    font-size: 16px;
 
 
     // centered div for clock placement
     .container{
         display:flex;
+        flex-wrap: wrap;
+        // border: 4px solid cyan; 
       
-        min-inline-size: 500px;
-        max-inline-size: 550px;
+        max-inline-size: 600px;
         box-sizing: border-box;
         margin-inline:auto;
         margin-block:25%;
@@ -28,7 +30,7 @@ body{
             flex-direction:column;
             justify-content: space-around;
             block-size: inherit;
-            flex-grow: 2;
+        
             align-items: center;
         
            
@@ -37,6 +39,29 @@ body{
                 block-size:10px;
                 inline-size:10px;
                 background-color: colors.$digit_on;
+                box-shadow:  5px 5px 10px  colors.$shadow;  
+            }
+        }
+        .small{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            inline-size:130px;
+            align-items:flex-end;
+            .sec{
+                display:flex;
+                flex-direction:row;
+                block-size: 75px;
+                inline-size:inherit;
+                
+            }
+            .ampm{
+                color:colors.$digit_on;
+                font-family: 'Courier New', Courier, monospace;
+                margin-inline-end: 10px;
+                font-size: 4rem;
+                text-shadow: 10px 10px 10px  colors.$shadow;
+                
             }
         }
     }

@@ -3,10 +3,10 @@
   background-color: rgb(18, 42, 54);
   block-size: 150px;
   inline-size: 93px;
-  display: inline-block;
-  margin-inline: 10px;
-  box-sizing: border-box;
   box-shadow: 10px 10px 20px rgba(19, 0, 19, 0.5);
+  display: inline-block;
+  box-sizing: border-box;
+  margin-inline: 10px;
 }
 
 /* zero */
@@ -109,6 +109,30 @@
   box-shadow: inset 10px 10px 20px rgba(19, 0, 19, 0.5);
 }
 
+/* size ajustments for seconds top and bottom */
+.proto-top-sec {
+  border: 8px solid rgb(18, 205, 177);
+  border-block-end: 5px solid rgb(18, 205, 177);
+  inline-size: 45px;
+  block-size: 28px;
+  box-sizing: border-box;
+  margin: 0;
+  margin-inline: 10px;
+  box-shadow: inset 10px 10px 20px rgba(19, 0, 19, 0.5);
+}
+
+/* bottom part of a  digit of seconds */
+.proto-bottom-sec {
+  border: 8px solid rgb(18, 205, 177);
+  border-block-start: 5px solid rgb(18, 205, 177);
+  inline-size: 45px;
+  block-size: 46px;
+  box-sizing: border-box;
+  margin: 0;
+  margin-inline: 10px;
+  box-shadow: inset 10px 10px 20px rgba(19, 0, 19, 0.5);
+}
+
 /* nine*/
 #nine-bottom {
   border-block-end: 10px solid rgb(14, 51, 70);
@@ -122,11 +146,12 @@ body {
   min-height: 100vh;
   padding-top: 1px;
   overflow: hidden;
+  font-size: 16px;
 }
 body .container {
   display: flex;
-  min-inline-size: 500px;
-  max-inline-size: 550px;
+  flex-wrap: wrap;
+  max-inline-size: 600px;
   box-sizing: border-box;
   margin-inline: auto;
   margin-block: 25%;
@@ -136,13 +161,33 @@ body .container .column {
   flex-direction: column;
   justify-content: space-around;
   block-size: inherit;
-  flex-grow: 2;
   align-items: center;
 }
 body .container .column .dot {
   block-size: 10px;
   inline-size: 10px;
   background-color: rgb(18, 205, 177);
+  box-shadow: 5px 5px 10px rgba(19, 0, 19, 0.5);
+}
+body .container .small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  inline-size: 130px;
+  align-items: flex-end;
+}
+body .container .small .sec {
+  display: flex;
+  flex-direction: row;
+  block-size: 75px;
+  inline-size: inherit;
+}
+body .container .small .ampm {
+  color: rgb(18, 205, 177);
+  font-family: "Courier New", Courier, monospace;
+  margin-inline-end: 10px;
+  font-size: 4rem;
+  text-shadow: 10px 10px 10px rgba(19, 0, 19, 0.5);
 }
 
 /*# sourceMappingURL=clock.css.map */
