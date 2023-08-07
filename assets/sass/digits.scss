@@ -101,6 +101,7 @@ border-inline-end:10px solid colors.$digit_off;
  block-size: 57px;
  box-sizing:border-box;
  margin: 0;
+ box-shadow:  inset 10px 10px 20px  colors.$shadow  ;  
         }
 
 
@@ -112,6 +113,7 @@ inline-size:inherit;
 block-size: 93px;
 box-sizing:border-box;
 margin: 0;
+box-shadow:  inset 10px 10px 20px  colors.$shadow  ;  
 }
 
 

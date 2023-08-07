@@ -96,6 +96,7 @@
   block-size: 57px;
   box-sizing: border-box;
   margin: 0;
+  box-shadow: inset 10px 10px 20px rgba(19, 0, 19, 0.5);
 }
 
 /* bottom part of a digit */
@@ -106,6 +107,7 @@
   block-size: 93px;
   box-sizing: border-box;
   margin: 0;
+  box-shadow: inset 10px 10px 20px rgba(19, 0, 19, 0.5);
 }
 
 /* nine*/
