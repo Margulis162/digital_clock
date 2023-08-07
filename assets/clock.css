@@ -1,12 +1,13 @@
 /* container for top and bottom parts */
 .num {
-  background-color: rgb(14, 23, 20);
+  background-color: rgb(18, 42, 54);
   block-size: 150px;
   inline-size: 93px;
   display: inline-block;
   margin-block: 30px;
   margin-inline: 30px;
   box-sizing: border-box;
+  box-shadow: 10px 10px 20px rgba(19, 0, 19, 0.5);
 }
 
 /* zero */
@@ -116,7 +117,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(14, 23, 20);
+  background-color: rgb(18, 42, 54);
 }
 
 /*# sourceMappingURL=clock.css.map */
