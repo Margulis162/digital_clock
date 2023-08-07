@@ -1,0 +1,126 @@
+@use 'colors.scss';
+
+/* container for top and bottom parts */
+ .num{
+    background-color:colors.$background;
+    block-size: 150px;
+    inline-size: 93px;
+    display: inline-block;
+    margin-block:30px;
+    margin-inline: 30px;
+    box-sizing:border-box
+    
+}
+
+
+/* zero */
+#zero-top{
+    border-block-end: 5px solid colors.$digit_off;
+}
+#zero-bottom{
+    border-block-start: 5px solid colors.$digit_off;
+}
+
+/* one */
+#one-top{
+    border-block-start: 10px solid colors.$digit_off;
+    border-block-end: 5px solid colors.$digit_off;
+    border-inline-start: 10px solid colors.$digit_off;
+   }
+#one-bottom{
+    border-block-start: 5px solid colors.$digit_off;
+    border-block-end: 10px solid colors.$digit_off;
+    border-inline-start: 10px solid colors.$digit_off;
+    }
+
+
+/* two */
+#two-top{
+    border-inline-start: 10px solid colors.$digit_off;
+}
+#two-bottom{
+   border-inline-end:10px solid colors.$digit_off;
+   
+}
+
+
+/* three */
+#three-top{
+    border-inline-start: 10px solid colors.$digit_off;
+}
+#three-bottom{
+    border-inline-start: 10px solid colors.$digit_off;
+}
+
+
+ /* four */
+ #four-top{
+    border-block-start: 10px solid colors.$digit_off;
+}
+#four-bottom{
+    border-block-end: 10px solid colors.$digit_off;
+    border-inline-start: 10px solid  colors.$digit_off;;
+}
+
+
+ /* five */
+ #five-top{
+    border-inline-end:10px solid colors.$digit_off;
+}
+#five-bottom{
+    border-inline-start: 10px solid colors.$digit_off;
+}
+
+
+/* six*/
+#six-top{
+border-inline-end:10px solid colors.$digit_off;
+    }
+  
+
+
+/* seven*/
+ #seven-top{
+ border-block-end: 5px solid colors.$digit_off;
+ border-inline-start: 10px solid colors.$digit_off;
+ }
+ #seven-bottom{
+ border-block-start: 5px solid colors.$digit_off;
+ border-block-end: 10px solid colors.$digit_off;
+ border-inline-start: 10px solid colors.$digit_off;
+        }
+
+/* eight sice all the digits made out of elements of 8 i can use it as a class for all of them and just modify it with id's
+. So I'll call it proto digit*/
+
+/* top part of a digit */
+.proto-top{
+ border: 10px solid colors.$digit_on;
+ border-block-end: 5px solid colors.$digit_on;
+ inline-size:inherit;
+ block-size: 57px;
+ box-sizing:border-box;
+ margin: 0;
+        }
+
+
+/* bottom part of a digit */
+.proto-bottom{
+border: 10px solid colors.$digit_on;
+border-block-start: 5px solid colors.$digit_on;
+inline-size:inherit;
+block-size: 93px;
+box-sizing:border-box;
+margin: 0;
+}
+
+
+/* nine*/
+   
+    
+    #nine-bottom{
+        
+        border-block-end: 10px solid colors.$digit_off;
+        border-inline-start: 10px solid colors.$digit_off;;
+        
+    }

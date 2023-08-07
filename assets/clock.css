@@ -1,0 +1,122 @@
+/* container for top and bottom parts */
+.num {
+  background-color: rgb(14, 23, 20);
+  block-size: 150px;
+  inline-size: 93px;
+  display: inline-block;
+  margin-block: 30px;
+  margin-inline: 30px;
+  box-sizing: border-box;
+}
+
+/* zero */
+#zero-top {
+  border-block-end: 5px solid rgb(14, 51, 70);
+}
+
+#zero-bottom {
+  border-block-start: 5px solid rgb(14, 51, 70);
+}
+
+/* one */
+#one-top {
+  border-block-start: 10px solid rgb(14, 51, 70);
+  border-block-end: 5px solid rgb(14, 51, 70);
+  border-inline-start: 10px solid rgb(14, 51, 70);
+}
+
+#one-bottom {
+  border-block-start: 5px solid rgb(14, 51, 70);
+  border-block-end: 10px solid rgb(14, 51, 70);
+  border-inline-start: 10px solid rgb(14, 51, 70);
+}
+
+/* two */
+#two-top {
+  border-inline-start: 10px solid rgb(14, 51, 70);
+}
+
+#two-bottom {
+  border-inline-end: 10px solid rgb(14, 51, 70);
+}
+
+/* three */
+#three-top {
+  border-inline-start: 10px solid rgb(14, 51, 70);
+}
+
+#three-bottom {
+  border-inline-start: 10px solid rgb(14, 51, 70);
+}
+
+/* four */
+#four-top {
+  border-block-start: 10px solid rgb(14, 51, 70);
+}
+
+#four-bottom {
+  border-block-end: 10px solid rgb(14, 51, 70);
+  border-inline-start: 10px solid rgb(14, 51, 70);
+}
+
+/* five */
+#five-top {
+  border-inline-end: 10px solid rgb(14, 51, 70);
+}
+
+#five-bottom {
+  border-inline-start: 10px solid rgb(14, 51, 70);
+}
+
+/* six*/
+#six-top {
+  border-inline-end: 10px solid rgb(14, 51, 70);
+}
+
+/* seven*/
+#seven-top {
+  border-block-end: 5px solid rgb(14, 51, 70);
+  border-inline-start: 10px solid rgb(14, 51, 70);
+}
+
+#seven-bottom {
+  border-block-start: 5px solid rgb(14, 51, 70);
+  border-block-end: 10px solid rgb(14, 51, 70);
+  border-inline-start: 10px solid rgb(14, 51, 70);
+}
+
+/* eight sice all the digits made out of elements of 8 i can use it as a class for all of them and just modify it with id's
+. So I'll call it proto digit*/
+/* top part of a digit */
+.proto-top {
+  border: 10px solid rgb(18, 205, 177);
+  border-block-end: 5px solid rgb(18, 205, 177);
+  inline-size: inherit;
+  block-size: 57px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* bottom part of a digit */
+.proto-bottom {
+  border: 10px solid rgb(18, 205, 177);
+  border-block-start: 5px solid rgb(18, 205, 177);
+  inline-size: inherit;
+  block-size: 93px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* nine*/
+#nine-bottom {
+  border-block-end: 10px solid rgb(14, 51, 70);
+  border-inline-start: 10px solid rgb(14, 51, 70);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(14, 23, 20);
+}
+
+/*# sourceMappingURL=clock.css.map */
