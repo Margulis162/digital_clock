@@ -1,52 +1,137 @@
-@layer lvl1 lvl2;
+@layer general digits;
 
-@layer lvl1{
+@layer general{
     body{
         margin:0;
         padding:0;
+        background-color:rgb(14, 23, 20);
         
     }
     
     
-    *{
-        margin:inherit;
-        padding:inherit;
-        border: 10px solid black;
+@layer digits{
+   /* container for top and bottom parts */
+    .num{
+        background-color:rgb(14, 23, 20);
+        block-size: 150px;
+        inline-size: 93px;
+        display: inline-block;
+        margin-block:30px;
+        margin-inline: 30px;
+        box-sizing:border-box
+        
     }
+
+
+    /* zero */
+    #zero-top{
+        border-block-end: 5px solid darkcyan;
+    }
+    #zero-bottom{
+        border-block-start: 5px solid darkcyan;
+    }
+
+    /* one */
+    #one-top{
+        border-block-start: 10px solid darkcyan;
+        border-block-end: 5px solid darkcyan;
+        border-inline-start: 10px solid darkcyan;
+       }
+    #one-bottom{
+        border-block-start: 5px solid darkcyan;
+        border-block-end: 10px solid darkcyan;
+        border-inline-start: 10px solid darkcyan;
+        }
     
-    #groove{
-        border-style: groove;
+
+    /* two */
+    #two-top{
+        border-inline-start: 10px solid darkcyan;
     }
-    
-    #ridge{
-        border-style: ridge;
-    }
-    
-    #inset{
-        border-style:inset;
-    }
-    
-    #outset{
-        border-style:outset;
+    #two-bottom{
+       border-inline-end:10px soloid darkcyan;
     }
 
 
-}
-
-
-
-@layer lvl2{
-    h1{
-        max-width: 150px;
-        margin:10px;
+    /* three */
+    #three-top{
+        border-inline-start: 10px solid darkcyan;
     }
-
-    body{
-        border-style: none;
+    #three-bottom{
+        border-inline-start: 10px solid darkcyan;
     }
 
 
-    html{
-        border-style: none;
+     /* four */
+     #four-top{
+        border-block-start: 10px solid darkcyan;
     }
-}
+    #four-bottom{
+        border-block-end: 10px solid darkcyan;
+        border-inline-start: 10px solid  darkcyan;;
+    }
+
+
+     /* five */
+     #five-top{
+        border-inline-end:10px solid darkcyan;
+    }
+    #five-bottom{
+        border-inline-start: 10px solid darkcyan;
+    }
+
+
+    /* six*/
+    #six-top{
+    border-inline-end:10px solid darkcyan;
+        }
+      
+
+
+    /* seven*/
+     #seven-top{
+     border-block-end: 5px solid darkcyan;
+     border-inline-start: 10px solid darkcyan;
+     }
+     #seven-bottom{
+     border-block-start: 5px solid darkcyan;
+     border-block-end: 10px solid darkcyan;
+     border-inline-start: 10px solid darkcyan;
+            }
+
+    /* eight sice all the digits made out of elements of 8 i can use it as a class for all of them and just modify it with id's
+    . So I'll call it proto digit*/
+
+    /* top part of a digit */
+    .proto-top{
+     border: 10px solid cyan;
+     border-block-end: 5px solid cyan;
+     inline-size:inherit;
+     block-size: 57px;
+     box-sizing:border-box;
+     margin: 0;
+            }
+
+
+    /* bottom part of a digit */
+    .proto-bottom{
+    border: 10px solid cyan;
+    border-block-start: 5px solid cyan;
+    inline-size:inherit;
+    block-size: 93px;
+    box-sizing:border-box;
+    margin: 0;
+    }
+
+
+    /* nine*/
+       
+        }
+        #nine-bottom{
+            
+            border-block-end: 10px solid darkcyan;
+            border-inline-start: 10px solid darkcyan;;
+            
+        }
+    }
+
