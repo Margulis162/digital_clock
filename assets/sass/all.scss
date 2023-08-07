@@ -5,5 +5,43 @@ body{
     margin:0;
     padding:0;
     background-color:colors.$background;
+    min-height: 100vh;
+    padding-top:1px;
+    overflow: hidden;
+
+
+    // centered div for clock placement
+    .container{
+        display:flex;
+      
+        min-inline-size: 500px;
+        max-inline-size: 550px;
+        box-sizing: border-box;
+        margin-inline:auto;
+        margin-block:25%;
+        
+       
+
+        // column divider between hr and min
+        .column{
+            display:flex;
+            flex-direction:column;
+            justify-content: space-around;
+            block-size: inherit;
+            flex-grow: 2;
+            align-items: center;
+        
+           
+            .dot{
+           
+                block-size:10px;
+                inline-size:10px;
+                background-color: colors.$digit_on;
+            }
+        }
+    }
+
+
+    
     
 }
