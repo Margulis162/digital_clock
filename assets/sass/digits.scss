@@ -14,20 +14,20 @@
 
 
 /* zero */
-.num-small .zero-top{
+.num-small.zero-top, .num.zero-top {
     border-block-end: 5px solid colors.$digit_off;
 }
-.num-small .zero-bottom{
+.num-small.zero-bottom, .num.zero-bottom{
     border-block-start: 5px solid colors.$digit_off;
 }
 
 /* one */
-.num-small .one-top{
+.num-small.one-top, .num.one-top{
     border-block-start: 10px solid colors.$digit_off;
     border-block-end: 5px solid colors.$digit_off;
     border-inline-start: 10px solid colors.$digit_off;
    }
-.num-small .one-bottom{
+.num-small.one-bottom, .num.one-bottom{
     border-block-start: 5px solid colors.$digit_off;
     border-block-end: 10px solid colors.$digit_off;
     border-inline-start: 10px solid colors.$digit_off;
@@ -35,56 +35,56 @@
 
 
 /* two */
-.num-small .two-top{
+.num-small.two-top, .num.two-top{
     border-inline-start: 10px solid colors.$digit_off;
 }
-.num-small .two-bottom{
+.num-small.two-bottom, .num.two-bottom{
    border-inline-end:10px solid colors.$digit_off;
    
 }
 
 
 /* three */
-.num-small .three-top{
+.num-small.three-top, .num.three-top{
     border-inline-start: 10px solid colors.$digit_off;
 }
-.num-small .three-bottom{
+.num-small.three-bottom, .num.three-bottom{
     border-inline-start: 10px solid colors.$digit_off;
 }
 
 
  /* four */
- .num-small .four-top{
+ .num-small.four-top,  .num.four-top{
     border-block-start: 10px solid colors.$digit_off;
 }
-.num-small .four-bottom{
+.num-small.four-bottom, .num.four-bottom{
     border-block-end: 10px solid colors.$digit_off;
     border-inline-start: 10px solid  colors.$digit_off;;
 }
 
 
  /* five */
- .num-small .five-top{
+ .num-small.five-top, .num.five-top{
     border-inline-end:10px solid colors.$digit_off;
 }
-.num-small .five-bottom{
+.num-small.five-bottom, .num.five-bottom{
     border-inline-start: 10px solid colors.$digit_off;
 }
 
 
 /* six*/
-.num-small .six-top{
+.num-small.six-top, .small.six-top{
 border-inline-end:10px solid colors.$digit_off;
     }
   
 
 
 /* seven*/
-.num-small .seven-top{
+.num-small.seven-top, .small.seven-top{
  border-block-end: 5px solid colors.$digit_off;
  border-inline-start: 10px solid colors.$digit_off;
  }
- .num-small .seven-bottom{
+ .num-small.seven-bottom, .small.seven-bottom{
  border-block-start: 5px solid colors.$digit_off;
  border-block-end: 10px solid colors.$digit_off;
  border-inline-start: 10px solid colors.$digit_off;
@@ -146,7 +146,7 @@ box-shadow:  inset 10px 10px 20px  colors.$shadow  ;
 /* nine*/
    
     
-.num-small .nine-bottom{
+.num-small.nine-bottom, .small.nine-bottom{
         
         border-block-end: 10px solid colors.$digit_off;
         border-inline-start: 10px solid colors.$digit_off;;
