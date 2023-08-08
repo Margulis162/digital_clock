@@ -14,10 +14,10 @@
 
 
 /* zero */
-#zero-top{
+.zero-top{
     border-block-end: 5px solid colors.$digit_off;
 }
-#zero-bottom{
+.zero-bottom{
     border-block-start: 5px solid colors.$digit_off;
 }
 
@@ -35,56 +35,56 @@
 
 
 /* two */
-#two-top{
+.two-top{
     border-inline-start: 10px solid colors.$digit_off;
 }
-#two-bottom{
+.two-bottom{
    border-inline-end:10px solid colors.$digit_off;
    
 }
 
 
 /* three */
-#three-top{
+.three-top{
     border-inline-start: 10px solid colors.$digit_off;
 }
-#three-bottom{
+.three-bottom{
     border-inline-start: 10px solid colors.$digit_off;
 }
 
 
  /* four */
- #four-top{
+ .four-top{
     border-block-start: 10px solid colors.$digit_off;
 }
-#four-bottom{
+.four-bottom{
     border-block-end: 10px solid colors.$digit_off;
     border-inline-start: 10px solid  colors.$digit_off;;
 }
 
 
  /* five */
- #five-top{
+ .five-top{
     border-inline-end:10px solid colors.$digit_off;
 }
-#five-bottom{
+.five-bottom{
     border-inline-start: 10px solid colors.$digit_off;
 }
 
 
 /* six*/
-#six-top{
+.six-top{
 border-inline-end:10px solid colors.$digit_off;
     }
   
 
 
 /* seven*/
- #seven-top{
+ .seven-top{
  border-block-end: 5px solid colors.$digit_off;
  border-inline-start: 10px solid colors.$digit_off;
  }
- #seven-bottom{
+ .seven-bottom{
  border-block-start: 5px solid colors.$digit_off;
  border-block-end: 10px solid colors.$digit_off;
  border-inline-start: 10px solid colors.$digit_off;
@@ -146,7 +146,7 @@ box-shadow:  inset 10px 10px 20px  colors.$shadow  ;
 /* nine*/
    
     
-    #nine-bottom{
+    .nine-bottom{
         
         border-block-end: 10px solid colors.$digit_off;
         border-inline-start: 10px solid colors.$digit_off;;
