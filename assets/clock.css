@@ -151,10 +151,10 @@ body {
 body .container {
   display: flex;
   flex-wrap: wrap;
-  max-inline-size: 600px;
+  max-inline-size: 620px;
   box-sizing: border-box;
   margin-inline: auto;
-  margin-block: 25%;
+  margin-block: 10%;
 }
 body .container .column {
   display: flex;
@@ -169,25 +169,48 @@ body .container .column .dot {
   background-color: rgb(18, 205, 177);
   box-shadow: 5px 5px 10px rgba(19, 0, 19, 0.5);
 }
-body .container .small {
+body .container .sec {
+  display: flex;
+  flex-direction: row;
+  block-size: 75px;
+  inline-size: inherit;
+}
+body .container .ampm {
+  color: rgb(18, 205, 177);
+  font-family: "Courier New", Courier, monospace;
+  margin-inline-end: 10px;
+  font-size: 4rem;
+  text-shadow: 10px 10px 10px rgba(19, 0, 19, 0.5);
+  line-height: inherit;
+  vertical-align: baseline;
+}
+body .small {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   inline-size: 130px;
   align-items: flex-end;
 }
-body .container .small .sec {
-  display: flex;
-  flex-direction: row;
-  block-size: 75px;
-  inline-size: inherit;
-}
-body .container .small .ampm {
-  color: rgb(18, 205, 177);
-  font-family: "Courier New", Courier, monospace;
-  margin-inline-end: 10px;
-  font-size: 4rem;
-  text-shadow: 10px 10px 10px rgba(19, 0, 19, 0.5);
+
+@media (max-width: 620px) {
+  div + .small {
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 20px;
+    inline-size: 230px;
+  }
+  .container {
+    block-size: 100vh;
+    max-inline-size: 230px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container div + .column {
+    display: none;
+  }
+  #min, #hour {
+    margin-block-start: 20px;
+  }
 }
 
 /*# sourceMappingURL=clock.css.map */
