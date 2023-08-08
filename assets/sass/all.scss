@@ -50,14 +50,19 @@ body{
             
         }
         .ampm{
-            color:colors.$digit_on;
-            font-family: 'Courier New', Courier, monospace;
-            margin-inline-end: 10px;
-            font-size: 4rem;
-            text-shadow: 10px 10px 10px  colors.$shadow;
-            line-height: inherit;
-            vertical-align: baseline;
             
+            color:colors.$digit_on;
+            font-family: 'Tektur', cursive;
+            margin-inline-end: 10px;
+            font-size:72px;
+            text-shadow: 10px 10px 10px  colors.$shadow;
+           
+            div{
+              max-block-size:77px;
+            }
+            
+           
+         
         }
     }
     .small{
@@ -65,6 +70,7 @@ body{
         flex-direction: column;
         justify-content: space-between;
         inline-size:130px;
+        block-size: 154px;
         align-items:flex-end;
     }
 
@@ -79,6 +85,7 @@ body{
         flex-direction:row;
         margin-block-start:20px;
         inline-size:230px;
+        max-block-size: 80px;
         
         
         
@@ -96,6 +103,14 @@ body{
     #min, #hour {
         
         margin-block-start:20px;
+    }
+
+    #ampm{
+        font-size: 62px;
+
+        div{
+            max-block-size:62px;
+        }
     }
     
     }
