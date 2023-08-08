@@ -22,12 +22,12 @@
 }
 
 /* one */
-#one-top{
+.one-top{
     border-block-start: 10px solid colors.$digit_off;
     border-block-end: 5px solid colors.$digit_off;
     border-inline-start: 10px solid colors.$digit_off;
    }
-#one-bottom{
+.one-bottom{
     border-block-start: 5px solid colors.$digit_off;
     border-block-end: 10px solid colors.$digit_off;
     border-inline-start: 10px solid colors.$digit_off;
