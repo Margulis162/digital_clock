@@ -47,6 +47,13 @@ body{
             flex-direction:row;
             block-size: 75px;
             inline-size:inherit;
+           
+
+            .num-small{
+                box-shadow:  10px 10px 20px  colors.$shadow;  
+                inline-size:45px;
+                margin-inline:5px;
+            }
             
         }
         .ampm{

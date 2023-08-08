@@ -10,76 +10,76 @@
 }
 
 /* zero */
-#zero-top {
+.num-small .zero-top {
   border-block-end: 5px solid rgb(14, 51, 70);
 }
 
-#zero-bottom {
+.num-small .zero-bottom {
   border-block-start: 5px solid rgb(14, 51, 70);
 }
 
 /* one */
-#one-top {
+.num-small .one-top {
   border-block-start: 10px solid rgb(14, 51, 70);
   border-block-end: 5px solid rgb(14, 51, 70);
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
-#one-bottom {
+.num-small .one-bottom {
   border-block-start: 5px solid rgb(14, 51, 70);
   border-block-end: 10px solid rgb(14, 51, 70);
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
 /* two */
-#two-top {
+.num-small .two-top {
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
-#two-bottom {
+.num-small .two-bottom {
   border-inline-end: 10px solid rgb(14, 51, 70);
 }
 
 /* three */
-#three-top {
+.num-small .three-top {
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
-#three-bottom {
+.num-small .three-bottom {
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
 /* four */
-#four-top {
+.num-small .four-top {
   border-block-start: 10px solid rgb(14, 51, 70);
 }
 
-#four-bottom {
+.num-small .four-bottom {
   border-block-end: 10px solid rgb(14, 51, 70);
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
 /* five */
-#five-top {
+.num-small .five-top {
   border-inline-end: 10px solid rgb(14, 51, 70);
 }
 
-#five-bottom {
+.num-small .five-bottom {
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
 /* six*/
-#six-top {
+.num-small .six-top {
   border-inline-end: 10px solid rgb(14, 51, 70);
 }
 
 /* seven*/
-#seven-top {
+.num-small .seven-top {
   border-block-end: 5px solid rgb(14, 51, 70);
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
-#seven-bottom {
+.num-small .seven-bottom {
   border-block-start: 5px solid rgb(14, 51, 70);
   border-block-end: 10px solid rgb(14, 51, 70);
   border-inline-start: 10px solid rgb(14, 51, 70);
@@ -88,7 +88,7 @@
 /* eight sice all the digits made out of elements of 8 i can use it as a class for all of them and just modify it with id's
 . So I'll call it proto digit*/
 /* top part of a digit */
-.proto-top {
+.eight-top {
   border: 10px solid rgb(18, 205, 177);
   border-block-end: 5px solid rgb(18, 205, 177);
   inline-size: inherit;
@@ -99,7 +99,7 @@
 }
 
 /* bottom part of a digit */
-.proto-bottom {
+.eight-bottom {
   border: 10px solid rgb(18, 205, 177);
   border-block-start: 5px solid rgb(18, 205, 177);
   inline-size: inherit;
@@ -110,7 +110,7 @@
 }
 
 /* size ajustments for seconds top and bottom */
-.proto-top-sec {
+.eight-top-sec {
   border: 8px solid rgb(18, 205, 177);
   border-block-end: 5px solid rgb(18, 205, 177);
   inline-size: 45px;
@@ -122,7 +122,7 @@
 }
 
 /* bottom part of a  digit of seconds */
-.proto-bottom-sec {
+.eight-bottom-sec {
   border: 8px solid rgb(18, 205, 177);
   border-block-start: 5px solid rgb(18, 205, 177);
   inline-size: 45px;
@@ -134,7 +134,7 @@
 }
 
 /* nine*/
-#nine-bottom {
+.num-small .nine-bottom {
   border-block-end: 10px solid rgb(14, 51, 70);
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
@@ -174,6 +174,11 @@ body .container .sec {
   flex-direction: row;
   block-size: 75px;
   inline-size: inherit;
+}
+body .container .sec .num-small {
+  box-shadow: 10px 10px 20px rgba(19, 0, 19, 0.5);
+  inline-size: 45px;
+  margin-inline: 5px;
 }
 body .container .ampm {
   color: rgb(18, 205, 177);

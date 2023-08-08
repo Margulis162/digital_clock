@@ -14,20 +14,20 @@
 
 
 /* zero */
-.zero-top{
+.num-small .zero-top{
     border-block-end: 5px solid colors.$digit_off;
 }
-.zero-bottom{
+.num-small .zero-bottom{
     border-block-start: 5px solid colors.$digit_off;
 }
 
 /* one */
-.one-top{
+.num-small .one-top{
     border-block-start: 10px solid colors.$digit_off;
     border-block-end: 5px solid colors.$digit_off;
     border-inline-start: 10px solid colors.$digit_off;
    }
-.one-bottom{
+.num-small .one-bottom{
     border-block-start: 5px solid colors.$digit_off;
     border-block-end: 10px solid colors.$digit_off;
     border-inline-start: 10px solid colors.$digit_off;
@@ -35,56 +35,56 @@
 
 
 /* two */
-.two-top{
+.num-small .two-top{
     border-inline-start: 10px solid colors.$digit_off;
 }
-.two-bottom{
+.num-small .two-bottom{
    border-inline-end:10px solid colors.$digit_off;
    
 }
 
 
 /* three */
-.three-top{
+.num-small .three-top{
     border-inline-start: 10px solid colors.$digit_off;
 }
-.three-bottom{
+.num-small .three-bottom{
     border-inline-start: 10px solid colors.$digit_off;
 }
 
 
  /* four */
- .four-top{
+ .num-small .four-top{
     border-block-start: 10px solid colors.$digit_off;
 }
-.four-bottom{
+.num-small .four-bottom{
     border-block-end: 10px solid colors.$digit_off;
     border-inline-start: 10px solid  colors.$digit_off;;
 }
 
 
  /* five */
- .five-top{
+ .num-small .five-top{
     border-inline-end:10px solid colors.$digit_off;
 }
-.five-bottom{
+.num-small .five-bottom{
     border-inline-start: 10px solid colors.$digit_off;
 }
 
 
 /* six*/
-.six-top{
+.num-small .six-top{
 border-inline-end:10px solid colors.$digit_off;
     }
   
 
 
 /* seven*/
- .seven-top{
+.num-small .seven-top{
  border-block-end: 5px solid colors.$digit_off;
  border-inline-start: 10px solid colors.$digit_off;
  }
- .seven-bottom{
+ .num-small .seven-bottom{
  border-block-start: 5px solid colors.$digit_off;
  border-block-end: 10px solid colors.$digit_off;
  border-inline-start: 10px solid colors.$digit_off;
@@ -94,7 +94,7 @@ border-inline-end:10px solid colors.$digit_off;
 . So I'll call it proto digit*/
 
 /* top part of a digit */
-.proto-top{
+.eight-top{
  border: 10px solid colors.$digit_on;
  border-block-end: 5px solid colors.$digit_on;
  inline-size:inherit;
@@ -106,7 +106,7 @@ border-inline-end:10px solid colors.$digit_off;
 
 
 /* bottom part of a digit */
-.proto-bottom{
+.eight-bottom{
 border: 10px solid colors.$digit_on;
 border-block-start: 5px solid colors.$digit_on;
 inline-size:inherit;
@@ -118,7 +118,7 @@ box-shadow:  inset 10px 10px 20px  colors.$shadow  ;
 
 /* size ajustments for seconds top and bottom */
 
-.proto-top-sec{
+.eight-top-sec{
     border: 8px solid colors.$digit_on;
     border-block-end: 5px solid colors.$digit_on;
     inline-size:45px;
@@ -131,7 +131,7 @@ box-shadow:  inset 10px 10px 20px  colors.$shadow  ;
    
    
    /* bottom part of a  digit of seconds */
-   .proto-bottom-sec{
+   .eight-bottom-sec{
    border: 8px solid colors.$digit_on;
    border-block-start: 5px solid colors.$digit_on;
    inline-size:45px;
@@ -146,7 +146,7 @@ box-shadow:  inset 10px 10px 20px  colors.$shadow  ;
 /* nine*/
    
     
-    .nine-bottom{
+.num-small .nine-bottom{
         
         border-block-end: 10px solid colors.$digit_off;
         border-inline-start: 10px solid colors.$digit_off;;
