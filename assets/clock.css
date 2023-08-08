@@ -10,76 +10,77 @@
 }
 
 /* zero */
-.num-small .zero-top {
+.num-small .zero-top, .num .zero-top {
   border-block-end: 5px solid rgb(14, 51, 70);
 }
 
-.num-small .zero-bottom {
+.num-small .zero-bottom,
+.num .zero-bottom {
   border-block-start: 5px solid rgb(14, 51, 70);
 }
 
 /* one */
-.num-small .one-top {
+.num-small .one-top, .num .one-top {
   border-block-start: 10px solid rgb(14, 51, 70);
   border-block-end: 5px solid rgb(14, 51, 70);
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
-.num-small .one-bottom {
+.num-small .one-bottom, .num .one-bottom {
   border-block-start: 5px solid rgb(14, 51, 70);
   border-block-end: 10px solid rgb(14, 51, 70);
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
 /* two */
-.num-small .two-top {
+.num-small .two-top, .num .two-top {
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
-.num-small .two-bottom {
+.num-small .two-bottom, .num .two-bottom {
   border-inline-end: 10px solid rgb(14, 51, 70);
 }
 
 /* three */
-.num-small .three-top {
+.num-small .three-top, .num .three-top {
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
-.num-small .three-bottom {
+.num-small .three-bottom, .num .three-bottom {
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
 /* four */
-.num-small .four-top {
+.num-small .four-top, .num .four-top {
   border-block-start: 10px solid rgb(14, 51, 70);
 }
 
-.num-small .four-bottom {
+.num-small .four-bottom, .num .four-bottom {
   border-block-end: 10px solid rgb(14, 51, 70);
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
 /* five */
-.num-small .five-top {
+.num-small .five-top, .num .five-top {
   border-inline-end: 10px solid rgb(14, 51, 70);
 }
 
-.num-small .five-bottom {
+.num-small .five-bottom, .num .five-bottom {
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
 /* six*/
-.num-small .six-top {
+.num-small .six-top, .num .six-top {
   border-inline-end: 10px solid rgb(14, 51, 70);
 }
 
 /* seven*/
-.num-small .seven-top {
+.num-small .seven-top, .num .seven-top {
   border-block-end: 5px solid rgb(14, 51, 70);
   border-inline-start: 10px solid rgb(14, 51, 70);
 }
 
-.num-small .seven-bottom {
+.num-small .seven-bottom, .num .seven-bottom {
   border-block-start: 5px solid rgb(14, 51, 70);
   border-block-end: 10px solid rgb(14, 51, 70);
   border-inline-start: 10px solid rgb(14, 51, 70);
@@ -134,7 +135,7 @@
 }
 
 /* nine*/
-.num-small .nine-bottom {
+.num-small .nine-bottom, .num .nine-bottom {
   border-block-end: 10px solid rgb(14, 51, 70);
   border-inline-start: 10px solid rgb(14, 51, 70);
 }

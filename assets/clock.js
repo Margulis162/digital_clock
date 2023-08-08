@@ -1,6 +1,6 @@
 // to zero out all the classes but 8
 function freshStart(element, cls){
-    console.log(element,cls);
+    
     element.className = "";
     element.classList.add(cls);    
 
@@ -10,6 +10,7 @@ function freshStart(element, cls){
 //tm is hr,min,or sec; 
  function count1(tm, top, bottom){
     // to fix the issue when the seconds only have one digit we need if else, the swithc is what changing the numbers
+   
     if(tm.length<2){
         switch(true){
             case(tm[0] === 0):
@@ -45,8 +46,8 @@ function freshStart(element, cls){
             bottom.classList.add("seven-bottom");
             break;
             case(tm[0] === 8):
-            top.classList.add("eight-top-sec");
-            bottom.classList.add("eight-bottom-sec");
+            // top.classList.add("eight-top-sec");
+            // bottom.classList.add("eight-bottom-sec");
             break;
             case(tm[0] === 9):
             top.classList.add("nine-top");
@@ -82,14 +83,16 @@ function freshStart(element, cls){
             case(tm[1] === 6):
             top.classList.add("six-top");
             bottom.classList.add("six-bottom");
+            
+
             break;
             case(tm[1] === 7):
             top.classList.add("seven-top");
             bottom.classList.add("seven-bottom");
             break;
             case(tm[1] === 8):
-            top.classList.add("eight-top-sec");
-            bottom.classList.add("eight-bottom-sec");
+            // top.classList.add("eight-top-sec");
+            // bottom.classList.add("eight-bottom-sec");
             break;
             case(tm[1] === 9):
             top.classList.add("nine-top");
@@ -100,6 +103,7 @@ function freshStart(element, cls){
 
     function count0(tm, top, bottom){
         // to fix the issue when the seconds only have one digit we need if else, the swithc is what changing the numbers
+       
         if(tm.length<2){
             
                 top.classList.add("zero-top");
@@ -152,7 +156,7 @@ function setTimeSec (){
     const sec01top = document.getElementById('sec-01-top');
     const sec01bottom = document.getElementById('sec-01-bottom');
     
-    console.log(sec);
+    
     
     // to zero out all the classes but 8
     freshStart(sec01top, 'eight-top-sec');
@@ -166,10 +170,32 @@ function setTimeSec (){
     }
    
 
+function setTimeMin(){
+    const time = new Date();
 
+    const min = Array.from(String(time.getMinutes()), Number);
+    const min10top = document.getElementById('min-10-top');
+    const min10bottom = document.getElementById('min-10-bottom');
+    const min01top = document.getElementById('min-01-top');
+    const min01bottom = document.getElementById('min-01-bottom');
+    
+    
+    
+    // to zero out all the classes but 8
+    freshStart(min01top, 'eight-top');
+    freshStart(min01bottom, "eight-bottom");
+
+    freshStart(min10top, 'eight-top');
+    freshStart(min10bottom, "eight-bottom");
+
+    count1(min, min01top, min01bottom);
+
+    count0( min, min10top,min10bottom );
+}
 
 // const min = Array.from(String(time.getSeconds()), Number);
 // const hour = Array.from(String(time.getSeconds()), Number);
 // setTimeSec();
 
 setInterval(setTimeSec, 1000);
+setInterval(setTimeMin, 1000);
