@@ -193,9 +193,33 @@ function setTimeMin(){
     count0( min, min10top,min10bottom );
 }
 
+function setTimeHr(){
+    const time = new Date();
+
+    const hr = Array.from(String(time.getHours()), Number);
+    const hr10top = document.getElementById('hr-10-top');
+    const hr10bottom = document.getElementById('hr-10-bottom');
+    const hr01top = document.getElementById('hr-01-top');
+    const hr01bottom = document.getElementById('hr-01-bottom');
+    
+    
+    
+    // to zero out all the classes but 8
+    freshStart(hr01top, 'eight-top');
+    freshStart(hr01bottom, "eight-bottom");
+
+    freshStart(hr10top, 'eight-top');
+    freshStart(hr10bottom, "eight-bottom");
+
+    count1(hr, hr01top, hr01bottom);
+
+    count0( hr, hr10top,hr10bottom );
+}
+
 // const min = Array.from(String(time.getSeconds()), Number);
 // const hour = Array.from(String(time.getSeconds()), Number);
 // setTimeSec();
 
 setInterval(setTimeSec, 1000);
 setInterval(setTimeMin, 1000);
+setInterval(setTimeHr, 1000);
