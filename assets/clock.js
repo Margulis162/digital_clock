@@ -140,61 +140,150 @@ function freshStart(element, cls){
             }}
 
 
-            // counter for american time
 
-    // function count(tm, top, bottom){
-    
-       
-    //     if(tm.length<2){
+
+
+
+            function count1Hr(tm, top, bottom){
+                // to fix the issue when the seconds only have one digit we need if else, the swithc is what changing the numbers
+               
+                if(tm.length<2){
+                    switch(true){
+                        case(tm[0] === 0):
+                        top.classList.add("two-top");
+                        bottom.classList.add("two-bottom");
+                        break;
+                        case(tm[0] === 1):
+                        top.classList.add("one-top");
+                        bottom.classList.add("one-bottom");
+                        break;
+                        case(tm[0] === 2):
+                        top.classList.add("two-top");
+                        bottom.classList.add("two-bottom");
+                        break;
+                        case(tm[0] === 3):
+                        top.classList.add("three-top");
+                        bottom.classList.add("three-bottom");
+                        break;
+                        case(tm[0] === 4):
+                        top.classList.add("four-top");
+                        bottom.classList.add("four-bottom");
+                        break;
+                        case(tm[0] === 5):
+                        top.classList.add("five-top");
+                        bottom.classList.add("five-bottom");
+                        break;
+                        case(tm[0] === 6):
+                        top.classList.add("six-top");
+                        bottom.classList.add("six-bottom");
+                        break;
+                        case(tm[0] === 7):
+                        top.classList.add("seven-top");
+                        bottom.classList.add("seven-bottom");
+                        break;
+                        case(tm[0] === 8):
+                        break;
+                        case(tm[0] === 9):
+                        top.classList.add("nine-top");
+                        bottom.classList.add("nine-bottom");
+                
+                    }
+                }else{
+                    switch(true){
+                        case(tm[1] === 0 && tm[0] !== 2):
+                        top.classList.add("zero-top");
+                        bottom.classList.add("zero-bottom");
+                        break;
+                        case(tm[1] === 1 && tm[0] !== 2):
+                        top.classList.add("one-top");
+                        bottom.classList.add("one-bottom");
+                        break;
+                        case(tm[1] === 2 && tm[0] !== 2):
+                        top.classList.add("two-top");
+                        bottom.classList.add("two-bottom");
+                        break;
+                        case(tm[1] === 3):
+                        top.classList.add("one-top");
+                        bottom.classList.add("one-bottom");
+                        break;
+                        case(tm[1] === 4):
+                        top.classList.add("two-top");
+                        bottom.classList.add("two-bottom");
+                        break;
+                        case(tm[1] === 5):
+                        top.classList.add("three-top");
+                        bottom.classList.add("three-bottom");
+                        break;
+                        case(tm[1] === 6):
+                        top.classList.add("four-top");
+                        bottom.classList.add("four-bottom");
+                        break;
+                        case(tm[1] === 7):
+                        top.classList.add("five-top");
+                        bottom.classList.add("five-bottom");
+                        break;
+                        case(tm[1] === 8):
+                        top.classList.add("six-top");
+                        bottom.classList.add("six-bottom");
+                        break;
+                        case(tm[1] === 9):
+                        top.classList.add("seven-top");
+                        bottom.classList.add("seven-bottom");
+                        break;
+                        case(tm[0] === 2 && tm[1] === 0):
+                        console.log('i work');
+                        break;
+                        case(tm[0] === 2 && tm[1] === 1):
+                        top.classList.add("nine-top");
+                        bottom.classList.add("nine-bottom");
+                        break;
+                        case(tm[0] === 2 && tm[1] === 2):
+                        top.classList.add("zero-top");
+                        bottom.classList.add("zero-bottom");
+                        break;
+                        case(tm[0] === 2 && tm[1] === 3):
+                        top.classList.add("one-top");
+                        bottom.classList.add("one-bottom");
+                        break;
+                
+                    }
+                }}
             
-    //             top.classList.add("zero-top");
-    //             bottom.classList.add("zero-bottom");
-                
-                
-        
-    //         }
-    //     else{
-    //         switch(true){
-    //             case(tm[0] === 0):
-    //             top.classList.add("zero-top");
-    //             bottom.classList.add("zero-bottom");
-    //             break;
-    //             case(tm[0] === 1):
-    //             top.classList.add("one-top");
-    //             bottom.classList.add("one-bottom");
-    //             break;
-    //             case(tm[0] === 2):
-    //             top.classList.add("two-top");
-    //             bottom.classList.add("two-bottom");
-    //             break;
-    //             case(tm[0] === 3):
-    //             top.classList.add("three-top");
-    //             bottom.classList.add("three-bottom");
-    //             break;
-    //             case(tm[0] === 4):
-    //             top.classList.add("four-top");
-    //             bottom.classList.add("four-bottom");
-    //             break;
-    //             case(tm[0] === 5):
-    //             top.classList.add("five-top");
-    //             bottom.classList.add("five-bottom");
-    //             break;
-    //             case(tm[1] === 6):
-    //             top.classList.add("six-top");
-    //             bottom.classList.add("six-bottom");
-    //             break;
-    //             case(tm[1] === 7):
-    //             top.classList.add("seven-top");
-    //             bottom.classList.add("seven-bottom");
-    //             break;
-    //             case(tm[1] === 8):
-    //             break;
-    //             case(tm[1] === 9):
-    //             top.classList.add("nine-top");
-    //             bottom.classList.add("nine-bottom");
-        
-    //         }
-    //         }}
+
+                function count0Hr(tm, top, bottom){
+                    // to fix the issue when the seconds only have one digit we need if else, the swithc is what changing the numbers
+                   
+                    if(tm.length<2){
+                        
+                            top.classList.add("zero-top");
+                            bottom.classList.add("zero-bottom");
+                            
+                            
+                    
+                        }
+                        else if(tm.length<2 && tm[0] === 0){
+                            top.classList.add("one-top");
+                            bottom.classList.add("one-bottom");
+                        }
+                    else{
+                        switch(true){
+                            
+                            case((tm[0] === 1 && tm[1] === 0) || (tm[0] === 1 && tm[1] === 1) ||(tm[0] === 1 && tm[1] === 2) ):
+                            top.classList.add("one-top");
+                            bottom.classList.add("one-bottom");
+                            break;
+
+                            case((tm[0] === 2 && tm[1] === 2) || (tm[0] === 2 && tm[1] === 3)):
+                            top.classList.add("one-top");
+                            bottom.classList.add("one-bottom");
+                            break;
+                            default:
+                                top.classList.add("zero-top");
+                                bottom.classList.add("zero-bottom");
+                    
+                        }
+                        }}
+            
 
 function setTimeSec (){
 
@@ -255,9 +344,9 @@ function setTimeHr(){
     freshStart(hr10top, 'eight-top');
     freshStart(hr10bottom, "eight-bottom");
 
-    count1(hr, hr01top, hr01bottom);
+    count1Hr(hr, hr01top, hr01bottom);
 
-    count0( hr, hr10top,hr10bottom );
+    count0Hr( hr, hr10top,hr10bottom );
     setAmPm();
 }
 
