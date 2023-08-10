@@ -46,8 +46,6 @@ function freshStart(element, cls){
             bottom.classList.add("seven-bottom");
             break;
             case(tm[0] === 8):
-            // top.classList.add("eight-top-sec");
-            // bottom.classList.add("eight-bottom-sec");
             break;
             case(tm[0] === 9):
             top.classList.add("nine-top");
@@ -83,8 +81,6 @@ function freshStart(element, cls){
             case(tm[1] === 6):
             top.classList.add("six-top");
             bottom.classList.add("six-bottom");
-            
-
             break;
             case(tm[1] === 7):
             top.classList.add("seven-top");
@@ -144,6 +140,62 @@ function freshStart(element, cls){
             }}
 
 
+            // counter for american time
+
+    // function count(tm, top, bottom){
+    
+       
+    //     if(tm.length<2){
+            
+    //             top.classList.add("zero-top");
+    //             bottom.classList.add("zero-bottom");
+                
+                
+        
+    //         }
+    //     else{
+    //         switch(true){
+    //             case(tm[0] === 0):
+    //             top.classList.add("zero-top");
+    //             bottom.classList.add("zero-bottom");
+    //             break;
+    //             case(tm[0] === 1):
+    //             top.classList.add("one-top");
+    //             bottom.classList.add("one-bottom");
+    //             break;
+    //             case(tm[0] === 2):
+    //             top.classList.add("two-top");
+    //             bottom.classList.add("two-bottom");
+    //             break;
+    //             case(tm[0] === 3):
+    //             top.classList.add("three-top");
+    //             bottom.classList.add("three-bottom");
+    //             break;
+    //             case(tm[0] === 4):
+    //             top.classList.add("four-top");
+    //             bottom.classList.add("four-bottom");
+    //             break;
+    //             case(tm[0] === 5):
+    //             top.classList.add("five-top");
+    //             bottom.classList.add("five-bottom");
+    //             break;
+    //             case(tm[1] === 6):
+    //             top.classList.add("six-top");
+    //             bottom.classList.add("six-bottom");
+    //             break;
+    //             case(tm[1] === 7):
+    //             top.classList.add("seven-top");
+    //             bottom.classList.add("seven-bottom");
+    //             break;
+    //             case(tm[1] === 8):
+    //             break;
+    //             case(tm[1] === 9):
+    //             top.classList.add("nine-top");
+    //             bottom.classList.add("nine-bottom");
+        
+    //         }
+    //         }}
+
 function setTimeSec (){
 
     // variables
@@ -172,26 +224,20 @@ function setTimeSec (){
 
 function setTimeMin(){
     const time = new Date();
-
     const min = Array.from(String(time.getMinutes()), Number);
     const min10top = document.getElementById('min-10-top');
     const min10bottom = document.getElementById('min-10-bottom');
     const min01top = document.getElementById('min-01-top');
     const min01bottom = document.getElementById('min-01-bottom');
-    
-    
-    
     // to zero out all the classes but 8
     freshStart(min01top, 'eight-top');
     freshStart(min01bottom, "eight-bottom");
-
     freshStart(min10top, 'eight-top');
-    freshStart(min10bottom, "eight-bottom");
-
+    freshStart(min10bottom, "eight-bottom")
     count1(min, min01top, min01bottom);
-
     count0( min, min10top,min10bottom );
 }
+
 
 function setTimeHr(){
     const time = new Date();
@@ -201,9 +247,7 @@ function setTimeHr(){
     const hr10bottom = document.getElementById('hr-10-bottom');
     const hr01top = document.getElementById('hr-01-top');
     const hr01bottom = document.getElementById('hr-01-bottom');
-    
-    
-    
+
     // to zero out all the classes but 8
     freshStart(hr01top, 'eight-top');
     freshStart(hr01bottom, "eight-bottom");
@@ -214,12 +258,21 @@ function setTimeHr(){
     count1(hr, hr01top, hr01bottom);
 
     count0( hr, hr10top,hr10bottom );
+    setAmPm();
 }
 
-// const min = Array.from(String(time.getSeconds()), Number);
-// const hour = Array.from(String(time.getSeconds()), Number);
-// setTimeSec();
+function setAmPm(){
+        // am pm changer
+        const time = new Date();
+        const ampm = document.getElementById("ampm");
+        const hr = time.getHours();
+        if(hr<=11){
+            ampm.textContent = "am";
+        }else{ampm.textContent = "pm";}
+       
 
-setInterval(setTimeSec, 1000);
+}
+
+setInterval(setTimeSec, 1);
 setInterval(setTimeMin, 1000);
 setInterval(setTimeHr, 1000);
