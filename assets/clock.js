@@ -9,7 +9,7 @@ function freshStart(element, cls){
 // swich for changing digits 
 //tm is hr,min,or sec; 
  function count1(tm, top, bottom){
-    // to fix the issue when the seconds only have one digit we need if else, the swithc is what changing the numbers
+    
    
     if(tm.length<2){
         switch(true){
@@ -253,7 +253,7 @@ function freshStart(element, cls){
                 function count0Hr(tm, top, bottom){
                     // to fix the issue when the seconds only have one digit we need if else, the swithc is what changing the numbers
                    
-                    if(tm.length<2){
+                    if(tm.length<2 && tm[0] !== 0){
                         
                             top.classList.add("zero-top");
                             bottom.classList.add("zero-bottom");
@@ -261,7 +261,7 @@ function freshStart(element, cls){
                             
                     
                         }
-                        else if(tm.length<2 && tm[0] === 0){
+                        else if(tm.length<2 && tm[0] == 0){
                             top.classList.add("one-top");
                             bottom.classList.add("one-bottom");
                         }
@@ -330,8 +330,9 @@ function setTimeMin(){
 
 function setTimeHr(){
     const time = new Date();
-
+    
     const hr = Array.from(String(time.getHours()), Number);
+   
     const hr10top = document.getElementById('hr-10-top');
     const hr10bottom = document.getElementById('hr-10-bottom');
     const hr01top = document.getElementById('hr-01-top');
